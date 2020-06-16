@@ -13,14 +13,17 @@ public class InvertBinaryTree {
 		
 		
 		
-		Node node = root;
-		while(root!=null) {
-			node.right = root.left;
-			node.left = root.right;
-			node = node.left;
-			root = root.right;
-		}
+		traversal(root);
 		
+		
+	}
+	
+	public static void traversal(Node root) {
+		if(root == null)
+			return;
+		System.out.println(root.data);
+		traversal(root.left);
+		traversal(root.right);
 	}
 
 }
