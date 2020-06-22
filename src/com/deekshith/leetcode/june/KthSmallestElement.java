@@ -18,8 +18,6 @@ public class KthSmallestElement {
 			}
 		}
 
-		
-
 		 System.out.println(arr[k-1]);
 	}
 
